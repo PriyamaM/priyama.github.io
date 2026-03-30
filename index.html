@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,47 +8,67 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="top-nav">
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Priyama Majumdar</a>
+      <nav class="site-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="intro">
-      <div class="photo-column">
-        <img src="profile.JPG" alt="Priyama Majumdar" class="profile-photo" />
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Economics</p>
+        <h1>Priyama Majumdar</h1>
+        <p class="lead">PhD Candidate in Economics, University of Warwick</p>
+
+        <p>
+          I work in <strong>Political Economy</strong> and <strong>Development Economics</strong>,
+          with secondary interests in gender, labour, and applied empirical methods.
+        </p>
+
+        <p>
+          I will join Princeton University as a postdoctoral researcher in September 2026.
+          My work combines experimental and observational methods, including tools from
+          machine learning and natural language processing.
+        </p>
+
+        <div class="hero-links">
+          <a class="button" href="research.html">View Research</a>
+          <a class="text-link" href="https://www.dropbox.com/scl/fi/6mhndwe2h00qac5xtjrt0/Priyama_CV_Latest.pdf?dl=0&rlkey=czpcbrg3jbp7umn40eln0xanf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
+        </div>
       </div>
 
-      <div class="text-column">
-        <h1>Priyama Majumdar</h1>
+      <div class="hero-image">
+        <img src="profile.JPG" alt="Priyama Majumdar" />
+      </div>
+    </section>
 
-        <p>
-          I am a PhD candidate in Economics at the University of Warwick. I will join
-          Princeton University as a postdoctoral researcher in September 2026.
-        </p>
+    <section class="home-section">
+      <div class="info-grid">
+        <div class="info-block">
+          <p class="section-label">Fields</p>
+          <p>Political Economy</p>
+          <p>Development Economics</p>
+          <p class="muted">Secondary: Gender, Labour</p>
+        </div>
 
-        <p>
-          My primary fields are <strong>Political Economy</strong> and
-          <strong>Development Economics</strong>, with secondary interests in the
-          <strong>Economics of Gender</strong> and <strong>Labour Economics</strong>.
-        </p>
-
-        <p>
-          My research combines experimental and observational methods with tools from
-          machine learning and natural language processing. I currently work on projects
-          in India, Denmark, and the United Kingdom.
-        </p>
-
-        <p>
-          <a href="https://www.dropbox.com/scl/fi/ujc1c8idtsf51lylyj329/Priyama-CV.pdf?rlkey=0remazrw3pn6lo3phczwjjwaw&dl=0" target="_blank" rel="noopener">
-            Curriculum Vitae
-          </a>
-        </p>
+        <div class="info-block">
+          <p class="section-label">Current Work</p>
+          <p>Projects in India, Denmark, and the United Kingdom.</p>
+        </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© Priyama Majumdar</p>
+    </div>
+  </footer>
 </body>
 </html>
