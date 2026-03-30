@@ -81,6 +81,33 @@ a {
   padding-bottom: 4px;
 }
 
+.paper-list {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.paper-item {
+  padding: 16px 0 18px 8px;
+  border-top: 1px solid var(--line);
+}
+
+.paper-item h3 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.paper-item h3 a:hover {
+  color: var(--accent);
+}
+
+.paper-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
 .site-nav a.active,
 .site-nav a:hover {
   color: var(--text);
