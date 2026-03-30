@@ -140,46 +140,43 @@ a:hover {
 /* research */
 
 .research-page {
-  max-width: calc(var(--reading-width) + 56px);
+  max-width: 760px;
   padding: 42px 0 72px;
 }
 
-.research-section + .research-section {
-  margin-top: 44px;
+.research-block + .research-block {
+  margin-top: 42px;
 }
 
-.research-section h1 {
+.research-heading {
   margin: 0 0 18px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--line);
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   font-weight: 600;
+  line-height: 1.4;
 }
 
-.paper-list {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+.research-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.paper-item {
-  padding-left: 2px;
+.research-entry {
+  margin: 0 0 22px;
 }
 
-.paper-item h2 {
-  margin: 0 0 4px;
-  font-size: 1.01rem;
-  font-weight: 500;
-  line-height: 1.5;
+.research-title {
+  margin: 0 0 3px;
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
-.paper-item p {
+.research-meta {
   margin: 0;
   color: var(--muted);
   font-size: 0.96rem;
-  line-height: 1.62;
+  line-height: 1.6;
 }
-
 /* responsive */
 
 @media (max-width: 850px) {
