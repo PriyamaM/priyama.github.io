@@ -56,14 +56,14 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 120px 1fr;
   gap: 48px;
   align-items: start;
   padding: 64px 0;
 }
 
 .profile-photo {
-  width: 260px;
+  width: 120px;
   max-width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
