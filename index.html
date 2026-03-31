@@ -7,22 +7,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="site-name">Priyama Majumdar</div>
-      <nav class="site-nav" aria-label="Primary">
-        <a class="active" href="index.html">Home</a>
-        <a href="research.html">Research</a>
-      </nav>
-    </div>
-  </header>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="site-name">Priyama Majumdar</div>
 
-  <main class="container home-page">
-    <section class="home-grid">
-      <aside class="home-sidebar">
-        <img class="profile-photo" src="profile.JPG" alt="Priyama Majumdar" />
+        <img src="profile.JPG" alt="Priyama Majumdar" class="profile-photo" />
 
-        <div class="contact-block">
+        <nav class="sidebar-nav" aria-label="Section navigation">
+          <a href="#bio">Bio</a>
+          <a href="#working-papers">Working Papers</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="sidebar-contact">
           <p>
             <a
               href="https://www.dropbox.com/scl/fi/6mhndwe2h00qac5xtjrt0/Priyama_CV_Latest.pdf?dl=0&rlkey=czpcbrg3jbp7umn40eln0xanf"
@@ -32,32 +31,218 @@
               Curriculum Vitae
             </a>
           </p>
-          <p>
-            <a href="mailto:priyama.majumdar@warwick.ac.uk">
-              priyama.majumdar@warwick.ac.uk
-            </a>
-          </p>
         </div>
-      </aside>
+      </div>
+    </aside>
 
-      <section class="home-content">
+    <main class="content">
+      <section id="bio" class="content-section">
+        <h1>Bio</h1>
 
-        <p class="home-lead">
+          <p> I am an applied microeconomist. My research spans (i) political economy, where I study how political institutions shape policy design and implementation; 
+            (ii) development and culture, where I study how norms and informal institutions influence behavior and policy effectiveness; and 
+            (iii) gender, where I study the sources of gender gaps in household decisions and labor market outcomes. 
+            I use both experimental and observational methods, drawing on administrative data, text-as-data, and machine-learning tools. 
+            I currently work on projects in India, Denmark, and the United Kingdom. </p>
+        
+        <p>
           I will join Princeton University as a postdoctoral researcher in September 2026.
         </p>
 
-        <p>
-          I work in <strong>Political Economy</strong> and <strong>Development Economics</strong>,
-          with secondary interests in gender, labour, and applied empirical methods.
-        </p>
+
+      </section>
+
+
+
+      <section id="working-papers" class="content-section">
+        <h2>Working Papers</h2>
+
+        <div class="research-entry">
+  <p class="research-title">
+    <a
+      href="https://www.dropbox.com/scl/fi/0xxxodyl0gohrllitan6h/Dowry_and_Political_Leadership.pdf?dl=0&rlkey=zk5eb30em3h0xbe2v3j8n5hxd"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Political Empowerment and Marital Practices
+    </a>
+  </p>
+
+  <p class="research-meta">R&amp;R, <em>Journal of Development Economics</em></p>
+
+  <details class="research-abstract">
+    <summary>Abstract</summary>
+    <p>
+        This paper examines whether expanding women’s political representation affects marital practices
+              in rural India. Exploiting the reservation of village council leadership positions for women under
+              India’s 1992 constitutional amendment, I show that exposure to female leaders delays marriage by
+              improving women’s economic opportunities, but also increases dowry payments. The increase in dowry
+              is concentrated in more patriarchal settings, where the social costs of delayed marriage are higher.
+              The results suggest that political empowerment can shift marital behavior, but that its effects are
+              constrained—and partly offset—by entrenched social norms. </p>
+  </details>
+</div>
+
+<div class="research-entry">
+  <p class="research-title">
+    <a
+      href="https://www.dropbox.com/scl/fi/803fumqpmqj4j134j91n3/Government-by-Discussion.pdf?dl=0&rlkey=k6c8n99eipu1pgesh965uweqg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Government by Discussion: Deliberation, Media, and Policy-Making
+    </a>
+  </p>
+
+  <p class="research-meta">with Elaheh Fatemipour</p>
+
+  <details class="research-abstract">
+    <summary>Abstract</summary>
+    <p>
+      This paper studies whether parliamentary deliberation affects policy-making, and whether its effects
+              depend on public exposure. Using quasi-random variation from the computerized ballot that determines
+              which policies are discussed during Question Hour in the Indian Parliament, we show that debated
+              issues are more likely to appear in subsequent bills and that related bills progress faster through
+              the legislative process. These effects are substantially stronger when debate receives media coverage.
+              Reductions in news attention cut the policy impact of debate by roughly half, implying that public
+              exposure is an important mechanism through which deliberation shapes policy.
+    </p>
+  </details>
+</div>
+
+<div class="research-entry">
+  <p class="research-title">
+    <a
+      href="https://www.dropbox.com/scl/fi/31obgis84ilp7j42esmf0/Immigration_Elaheh_Priyama.pdf?dl=0&rlkey=674ygildlw9225mjwsfcqj84v"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      The Cultural Premium: How Cultural Distance, Economic Contributions and Value Alignment Shape Immigration Attitudes
+    </a>
+  </p>
+
+  <p class="research-meta">with Elaheh Fatemipour</p>
+
+  <details class="research-abstract">
+    <summary>Abstract</summary>
+    <p>
+      This paper quantifies a cultural premium in immigration attitudes: the additional income a culturally
+              distant immigrant must earn to be equally preferred to a culturally close immigrant for
+              remaining in the host country. Using a representative survey experiment in the United Kingdom, we
+              estimate that this premium exceeds £20,000 when the immigrant’s personal values are unobserved, but
+              falls by 73% when respondents learn that his values align with UK norms. Information on value alignment
+              also reduces concerns about cultural erosion by 35%. The findings indicate that opposition to culturally
+              distant immigrants reflects, to a large extent, beliefs about their underlying values rather than origin
+              per se.   </p>
+  </details>
+</div>
+
+<div class="research-entry">
+  <p class="research-title">
+    <a
+      href="https://www.dropbox.com/scl/fi/798tjt3nt977yh8pphc39/CP_and_mental_health.pdf?dl=0&rlkey=nqs4angdssjtipb246vvfz5w7"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Postpartum Depression and the Motherhood Penalty
+    </a>
+  </p>
+
+  <p class="research-meta">
+    with Sonia Bhalotra, N. Meltem Daysal, Louis Fréget, Jonas Cuzulan Hirani,
+    Mircea Trandafir, Miriam Wüst, and Tom Zohar
+  </p>
+
+  <details class="research-abstract">
+    <summary>Abstract</summary>
+    <p>
+      This paper studies how postpartum depression affects mothers’ labor-market trajectories after childbirth.
+              Using Danish administrative records linked to validated postpartum depression screenings, we show that
+              depressed and non-depressed mothers follow similar pre-birth employment trends but diverge sharply after
+              birth, generating persistent employment gaps. These effects are larger for less educated mothers and for
+              women in less family-friendly jobs. The results identify postpartum depression as an important and unequal
+              contributor to the motherhood penalty.
+    </p>
+  </details>
+</div>
+        
+      </section>
+
+      <section id="publications" class="content-section">
+        <h2>Publications</h2>
+
+<div class="research-entry">
+  <p class="research-title">
+    <a
+      href="https://www.dropbox.com/scl/fi/pace9iim0ct2tg0k1l247/Economica-2023-Banerjee-Exponential-growth-bias-in-the-prediction-of-COVID-19-spread-and-economic-expectation.pdf?dl=0&rlkey=1a7n58qrs4cdfzuj8knm0glz3"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Exponential Growth Bias in the Prediction of COVID-19 Spread and Economic Expectation
+    </a>
+  </p>
+
+  <p class="research-meta">with Ritwik Banerjee · <em>Economica</em>, 2023</p>
+
+  <details class="research-abstract">
+    <summary>Abstract</summary>
+    <p>
+      This paper studies exponential growth bias in beliefs about COVID-19 transmission and examines how
+              reducing this bias affects economic expectations and risky investment. Using four experimental
+              interventions, we show that simple feedback and forecast information substantially reduce
+              misperceptions about epidemic growth. Correcting the bias also dampens expectations of macroeconomic
+              deterioration and reduces risky investment. The results highlight how errors in processing non-linear
+              growth can shape economic beliefs and choice under uncertainty.
+    </p>
+  </details>
+</div>
+        
+
+<div class="research-entry">
+  <p class="research-title">
+    <a
+      href="https://www.dropbox.com/scl/fi/hgo881aeyaxkjjzi20pfu/1-s2.0-S0277953620306924-main.pdf?dl=0&rlkey=awq8muq99tggj0ts6pa593x0x"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Exponential-Growth Prediction Bias and Compliance with Safety Measures Related to COVID-19
+    </a>
+  </p>
+
+  <p class="research-meta">
+    with Ritwik Banerjee and Joydeep Bhattacharya ·
+    <em>Social Science &amp; Medicine</em>, 2020
+  </p>
+
+  <details class="research-abstract">
+    <summary>Abstract</summary>
+    <p>
+      This paper studies exponential-growth prediction bias in beliefs about COVID-19 transmission and its
+              implications for compliance with protective behavior. Using an incentivized online experiment spanning
+              countries at different stages of the pandemic, we show that respondents systematically underestimate
+              infection growth, and that larger bias is associated with lower compliance with safety measures. A
+              simple information intervention that presents prior case counts in raw numbers rather than graphs
+              significantly reduces the bias. The findings suggest that how epidemic information is presented can
+              improve risk perception and public-health behavior.
+    </p>
+  </details>
+</div>
+        
+      </section>
+
+
+            <section id="contact" class="content-section">
+        <h2>Contact</h2>
 
         <p>
-          My work combines experimental and observational methods, including tools from
-          machine learning and natural language processing. I currently work on projects
-          in India, Denmark, and the United Kingdom.
+          Email:
+          <a href="mailto:priyama.majumdar@warwick.ac.uk">
+            priyama.majumdar@warwick.ac.uk
+          </a>
         </p>
       </section>
-    </section>
-  </main>
+      
+    </main>
+  </div>
 </body>
 </html>
