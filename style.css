@@ -181,6 +181,16 @@ p {
   content: "− ";
 }
 
+.research-title a {
+  color: #1f4e8c;
+  text-decoration: none;
+}
+
+.research-title a:hover,
+.research-title a:focus {
+  text-decoration: underline;
+}
+
 .research-abstract p {
   margin: 8px 0 0;
   font-size: 0.94rem;
