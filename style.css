@@ -3,7 +3,7 @@
   --text: #111111;
   --muted: #5e5e5e;
   --line: #d7d7d7;
-  --link-blue: #2a5db0;
+  --link: #315ea8;
   --sidebar-width: 260px;
   --photo-width: 150px;
   --content-width: 760px;
@@ -34,17 +34,20 @@ img {
   max-width: 100%;
 }
 
-a {
-  color: var(--link-blue);
+/* Global links */
+a,
+a:visited {
+  color: var(--link);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 a:hover,
 a:focus {
-  color: var(--link-blue);
+  color: var(--link);
 }
 
+/* Layout */
 .page-shell {
   width: min(1120px, calc(100% - 64px));
   margin: 0 auto;
@@ -68,14 +71,20 @@ a:focus {
   font-size: 1.08rem;
   font-weight: 600;
   line-height: 1.4;
+  color: var(--text);
 }
 
 .profile-photo {
   width: var(--photo-width);
-  border: 1px solid var(--line);
   margin-bottom: 24px;
+  border: 1px solid var(--line);
 }
 
+.content {
+  max-width: var(--content-width);
+}
+
+/* Sidebar navigation */
 .sidebar-nav {
   display: flex;
   flex-direction: column;
@@ -83,8 +92,9 @@ a:focus {
   margin-bottom: 26px;
 }
 
-.sidebar-nav a {
-  color: var(--link-blue);
+.sidebar-nav a,
+.sidebar-nav a:visited {
+  color: var(--link);
   text-decoration: none;
   font-size: 0.98rem;
   line-height: 1.5;
@@ -92,7 +102,7 @@ a:focus {
 
 .sidebar-nav a:hover,
 .sidebar-nav a:focus {
-  color: var(--link-blue);
+  color: var(--link);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -103,10 +113,7 @@ a:focus {
   line-height: 1.5;
 }
 
-.content {
-  max-width: var(--content-width);
-}
-
+/* Sections */
 .content-section {
   padding-top: 8px;
   scroll-margin-top: 24px;
@@ -121,6 +128,7 @@ h2 {
   margin: 0 0 18px;
   font-weight: 600;
   line-height: 1.4;
+  color: var(--text);
 }
 
 h1 {
@@ -136,6 +144,7 @@ p {
   font-size: 1rem;
 }
 
+/* Research entries */
 .research-entry {
   margin: 0 0 24px;
 }
@@ -146,14 +155,15 @@ p {
   line-height: 1.55;
 }
 
-.research-title a {
-  color: var(--link-blue);
+.research-title a,
+.research-title a:visited {
+  color: var(--link);
   text-decoration: none;
 }
 
 .research-title a:hover,
 .research-title a:focus {
-  color: var(--link-blue);
+  color: var(--link);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -165,15 +175,16 @@ p {
   line-height: 1.6;
 }
 
+/* Abstract toggle */
 .research-abstract {
   margin-top: 6px;
 }
 
 .research-abstract summary {
   cursor: pointer;
-  font-size: 0.94rem;
-  color: var(--muted);
   list-style: none;
+  color: var(--muted);
+  font-size: 0.94rem;
 }
 
 .research-abstract summary::-webkit-details-marker {
@@ -190,29 +201,30 @@ p {
 
 .research-abstract p {
   margin: 8px 0 0;
+  max-width: 680px;
+  color: var(--muted);
   font-size: 0.94rem;
   line-height: 1.65;
-  color: var(--muted);
-  max-width: 680px;
 }
 
+/* Responsive */
 @media (max-width: 900px) {
   :root {
     --photo-width: 135px;
   }
 
   .page-shell {
+    width: min(1120px, calc(100% - 40px));
     grid-template-columns: 220px minmax(0, 1fr);
     gap: 40px;
-    width: min(1120px, calc(100% - 40px));
   }
 }
 
 @media (max-width: 720px) {
   .page-shell {
+    width: min(1120px, calc(100% - 28px));
     grid-template-columns: 1fr;
     gap: 28px;
-    width: min(1120px, calc(100% - 28px));
     padding: 28px 0 44px;
   }
 
