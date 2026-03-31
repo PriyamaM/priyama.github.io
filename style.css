@@ -3,7 +3,7 @@
   --text: #111111;
   --muted: #5e5e5e;
   --line: #d7d7d7;
-  --link-blue: #1f4e8c;
+  --link-blue: #2a5db0;
   --sidebar-width: 260px;
   --photo-width: 150px;
   --content-width: 760px;
@@ -35,13 +35,14 @@ img {
 }
 
 a {
-  color: var(--text);
+  color: var(--link-blue);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-a:hover {
-  color: var(--muted);
+a:hover,
+a:focus {
+  color: var(--link-blue);
 }
 
 .page-shell {
@@ -83,13 +84,15 @@ a:hover {
 }
 
 .sidebar-nav a {
-  color: var(--text);
+  color: var(--link-blue);
   text-decoration: none;
   font-size: 0.98rem;
   line-height: 1.5;
 }
 
-.sidebar-nav a:hover {
+.sidebar-nav a:hover,
+.sidebar-nav a:focus {
+  color: var(--link-blue);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
